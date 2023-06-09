@@ -28,7 +28,7 @@ engine = create_engine('postgresql://username:password@localhost/dbname')
 
 1. Создание нового студента:  
 
-URL: POST /students  
+URL: POST http://localhost:8000/students  
 Тело запроса (raw JSON):  
 {  
   "name": "Иван",  
@@ -39,11 +39,11 @@ URL: POST /students
 
 2. Получение информации о студенте по его id:  
 
-URL: GET /students/{student_id}  
+URL: GET http://localhost:8000/students/{student_id}  
 
 3. Обновление информации о студенте по его id:  
 
-URL: PUT /students/{student_id}  
+URL: PUT http://localhost:8000/students/{student_id}  
 Тело запроса (raw JSON):  
 {  
   "name": "Иван",  
@@ -54,15 +54,15 @@ URL: PUT /students/{student_id}
 
 4. Удаление студента по его id:  
 
-URL: DELETE /students/{student_id}  
+URL: DELETE http://localhost:8000/students/{student_id}  
 
 5. Получение списка всех преподавателей:  
 
-URL: GET /teachers
+URL: GET http://localhost:8000/teachers
 
 6. Создание нового курса:  
 
-URL: POST /courses  
+URL: POST http://localhost:8000/courses  
 Тело запроса (raw JSON):  
 {  
   "name": "Менеджмент",  
@@ -71,14 +71,14 @@ URL: POST /courses
 
 7. Получение информации о курсе по его id:  
 
-URL: GET /courses/{course_id}  
+URL: GET http://localhost:8000/courses/{course_id}  
 
 8. Получение списка всех студентов на курсе:  
 
-URL: GET /courses/{course_id}/students  
+URL: GET http://localhost:8000/courses/{course_id}/students  
 9. Создание новой оценки для студента по курсу:  
 
-URL: POST /grades  
+URL: POST http://localhost:8000/grades  
 Тело запроса (raw JSON):  
 {  
   "student_id": 1,  
@@ -88,7 +88,7 @@ URL: POST /grades
 
 10. Обновление оценки студента по курсу:  
 
-URL: PUT /grades/{grade_id}  
+URL: PUT http://localhost:8000/grades/{grade_id}  
 Тело запроса (raw JSON):  
 {  
   "student_id": 1,  
