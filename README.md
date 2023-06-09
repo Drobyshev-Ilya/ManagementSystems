@@ -76,6 +76,7 @@ URL: GET http://localhost:8000/courses/{course_id}
 8. Получение списка всех студентов на курсе:  
 
 URL: GET http://localhost:8000/courses/{course_id}/students  
+
 9. Создание новой оценки для студента по курсу:  
 
 URL: POST http://localhost:8000/grades  
