@@ -47,12 +47,14 @@ URL: GET http://localhost:8000/students/{student_id}
 
 URL: PUT http://localhost:8000/students/{student_id}  
 Тело запроса (raw JSON):  
+```json   
 {  
   "name": "Иван",  
   "surname": "Смирнов",  
   "date_of_birth": "1995-10-15",  
   "group_id": 1  
 }  
+```   
 
 4. Удаление студента по его id:  
 
@@ -66,10 +68,12 @@ URL: GET http://localhost:8000/teachers
 
 URL: POST http://localhost:8000/courses  
 Тело запроса (raw JSON):  
+```json   
 {  
   "name": "Менеджмент",  
   "description": "Основы менеджмента"  
 }  
+```   
 
 7. Получение информации о курсе по его id:  
 
@@ -83,22 +87,25 @@ URL: GET http://localhost:8000/courses/{course_id}/students
 
 URL: POST http://localhost:8000/grades  
 Тело запроса (raw JSON):  
+```json   
 {  
   "student_id": 1,  
   "course_id": 1,  
   "grade": 90.5  
 }  
+```   
 
 10. Обновление оценки студента по курсу:  
 
 URL: PUT http://localhost:8000/grades/{grade_id}  
 Тело запроса (raw JSON):  
+```json   
 {  
   "student_id": 1,  
   "course_id": 1,  
   "grade": 95.2  
 }  
-
+```   
 
 ## Точки входа API  
 POST /students - создать нового студента.  
