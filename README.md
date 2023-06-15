@@ -30,12 +30,14 @@ engine = create_engine('postgresql://username:password@localhost/dbname')
 
 URL: POST http://localhost:8000/students  
 Тело запроса (raw JSON):  
+```json   
 {  
   "name": "Иван",  
   "surname": "Иванов",  
   "date_of_birth": "1995-10-15",  
   "group_id": 1  
 }  
+```   
 
 2. Получение информации о студенте по его id:  
 
